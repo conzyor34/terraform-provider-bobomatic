@@ -9,13 +9,13 @@ terraform {
 provider "bobomatic" {}
 
 data "bobomatic_resourcenames" "resourcenames" {
-  bu          = "ct"
-  purpose     = "automationhub"
-  region      = null
-  geography   = "global"
-  client      = null
-  program     = null
-  environment = "dev"
+  bu          = "bu"
+  purpose     = "purpose"
+  region      = "region"
+  geography   = "geography"
+  client      = "client"
+  program     = "program"
+  environment = "environment"
   index       = 1
 }
 
