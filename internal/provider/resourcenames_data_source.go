@@ -33,34 +33,44 @@ func (d *resourcenamesDataSource) Schema(_ context.Context, _ datasource.SchemaR
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
 			"bu": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the business unit token.",
 			},
 			"purpose": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the purpose token.",
 			},
 			"geography": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the geography token.",
 			},
 			"region": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the region token.",
 			},
 			"client": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the client token.",
 			},
 			"program": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the program token.",
 			},
 			"environment": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The value of the environment token.",
 			},
 			"index": schema.Int64Attribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The integer index to append to the end of the resource name.",
 			},
 			"subscription": schema.StringAttribute{
-				Computed: true,
+				Computed:    true,
+				Description: "The computed name for a Subscription.",
 			},
 			"resourcegroup": schema.StringAttribute{
-				Computed: true,
+				Computed:    true,
+				Description: "The computed name for a Resource Group.",
 			},
 		},
 	}
